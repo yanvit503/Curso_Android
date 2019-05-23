@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="wrap_content"
+                                             android:layout_height="wrap_content"
+                                             android:layout_gravity="center"
+                                             android:orientation="horizontal"
+>
+
+    <ImageButton
+            android:id="@+id/Dialog_Camera"
+            android:layout_width="66dp"
+            android:layout_height="63dp"
+            android:src="@drawable/ic_camera_alt_black_24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Camera"
+              android:layout_marginStart="8dp"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintBottom_toBottomOf="parent"
+              android:id="@+id/textView3"/>
+
+    <ImageButton
+            android:id="@+id/Dialog_Galeria"
+            android:layout_width="66dp"
+            android:layout_height="63dp"
+            android:src="@drawable/ic_photo_library_black_24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Galeria"
+              android:id="@+id/textView2"
+
+              app:layout_constraintStart_toEndOf="@+id/textView3" android:layout_marginStart="60dp"
+              app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</android.support.constraint.ConstraintLayout>

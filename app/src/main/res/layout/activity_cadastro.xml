@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".Activity.CadastroActivity"
+              android:orientation="vertical"
+              android:gravity="top"
+              android:paddingTop="10dp"
+              android:id="@+id/layoutCadastro">
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="20dp"
+    >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+                android:id="@+id/imgView_Servico"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                android:clickable="true" android:elevation="10dp" tools:src="@drawable/camera"
+                android:layout_margin="10dp"/>
+
+        <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_camera_alt_branco_24dp"
+                android:layout_gravity="bottom"
+                android:id="@+id/btnMudarFoto"
+                android:background="@drawable/btn_camera"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="2dp"
+                app:layout_constraintEnd_toEndOf="@+id/imgView_Servico" android:layout_marginBottom="4dp"
+                android:onClick="BtnMudarImagem" android:elevation="11dp"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <Spinner
+            android:id="@+id/spinner_cadastro_Opcao"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:entries="@array/array"/>
+
+
+    <EditText
+            android:id="@+id/txt_cadastro_Cliente"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="60dp"
+            android:layout_margin="15dp"
+            android:hint="Cliente" android:singleLine="true"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp">
+
+        <EditText
+                android:id="@+id/txt_cadastro_Endereco"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:hint="Endereço" android:singleLine="true"/>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="60dp"
+        >
+
+            <EditText
+                    android:id="@+id/txt_cadastro_Numero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:hint="Número"
+                    android:inputType="number"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp">
+
+        <EditText
+                android:id="@+id/txt_cadastro_Bairro"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:hint="Bairro" android:singleLine="true"/>
+
+        <EditText
+                android:id="@+id/txt_cadastro_Cidade"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="35dp"
+                android:hint="Cidade" android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+    >
+
+        <Button
+                android:id="@+id/btnSalvar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botao"
+                android:text="Salvar"
+                android:layout_marginBottom="20dp"
+                android:textColor="#fff" android:onClick="Salvar"/>
+
+        <Button
+                android:layout_marginStart="20dp"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/botao"
+                android:text="Buscar localização"
+                android:layout_marginBottom="20dp"
+                android:textColor="#fff"/>
+    </LinearLayout>
+
+</LinearLayout>

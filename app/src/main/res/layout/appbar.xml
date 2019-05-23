@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+
+
+>
+    <!--toolbar-->
+    <android.support.v7.widget.Toolbar
+            android:id= "@+id/mainactivity_toolbar"
+            app:title="Meus serviços"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@color/Branco"
+            android:background="@color/AzulEscuro"
+            app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+
+    >
+
+
+    </android.support.v7.widget.Toolbar>
+
+</LinearLayout>

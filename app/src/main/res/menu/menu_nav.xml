@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu android:layout_width="match_parent" android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item android:id="@+id/novo"
+              android:title="Novo serviço"
+              android:icon="@drawable/add"
+        />
+        />
+    </group>
+
+    <group android:id="@+id/group_menu">
+
+        <item android:id="@+id/sair"
+              android:title="Sair"
+              android:icon="@drawable/sair"
+        />
+    </group>
+
+</menu>
